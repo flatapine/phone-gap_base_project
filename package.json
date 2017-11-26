@@ -1,0 +1,61 @@
+{
+  "name": "onsenui2-angular2",
+  "version": "1.0.0",
+  "description": "A PhoneGap Hello World template",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc -p .",
+    "bundle": "webpack src/main.js www/js/bundle.js",
+    "build": "npm run tsc && npm run bundle",
+    "start": "static .",
+    "postinstall": "cpx \"node_modules/onsenui/**/*\" \"www/lib/onsenui\"",
+    "postbuild": "cpx \"src/**/*.html\" \"www/src\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common": "^2.2.4",
+    "@angular/compiler": "^2.4.1",
+    "@angular/core": "^2.2.4",
+    "@angular/platform-browser": "^2.2.4",
+    "@angular/platform-browser-dynamic": "^2.2.4",
+    "angular2-onsenui": "1.0.0-rc.4",
+    "core-js": "^2.4.1",
+    "onsenui": "^2.0.5",
+    "rxjs": "5.0.0-beta.12",
+    "zone.js": "0.6.21",
+    "cpx": "^1.5.0",
+    "cordova-plugin-battery-status": "~1.2.4",
+    "cordova-plugin-camera": "~2.4.1",
+    "cordova-plugin-media-capture": "~1.4.3",
+    "cordova-plugin-device": "~1.1.6",
+    "cordova-plugin-dialogs": "~1.3.3",
+    "cordova-plugin-file": "~4.3.3",
+    "cordova-plugin-geolocation": "~2.4.3",
+    "cordova-plugin-globalization": "~1.0.7",
+    "cordova-plugin-inappbrowser": "~1.7.1",
+    "cordova-plugin-network-information": "~1.3.3",
+    "cordova-plugin-vibration": "~2.1.5"
+  },
+  "devDependencies": {
+    "node-static": "^0.7.9",
+    "typescript": "^2.0.10",
+    "webpack": "^1.13.3"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-battery-status": {},
+      "cordova-plugin-camera": {},
+      "cordova-plugin-media-capture": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-dialogs": {},
+      "cordova-plugin-file": {},
+      "cordova-plugin-geolocation": {},
+      "cordova-plugin-globalization": {},
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-network-information": {},
+      "cordova-plugin-vibration": {}
+    }
+  }
+}
