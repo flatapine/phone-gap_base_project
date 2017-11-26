@@ -1,8 +1,10 @@
 node_modules/
-www/
+www/*
 plugins/
 hooks/
 platforms/
 config.xml
 CONTRIBUTING.md
 .DS_Store
+
+!www/index.html
